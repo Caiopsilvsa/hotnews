@@ -26,50 +26,22 @@ export function News(){
     return(
        <Container >
 
-         
-           
-           
               {news.map(news =>{
                   return(
                      <Content>
                         <a href ={`${news.url}`} target="_blank"> 
                           <h1>  {news.title} </h1> 
-                          <img src={`${news.urlToImage}`} />  
+                          <img src={`${news.urlToImage}`} alt="img" />  
                         </a>
-                        
-                        
-                       
-                       
+                               
                         <h3>
                               {news.description}
                         </h3>
-                        
-                       
-
-                        
-
+                
                         </Content> 
                         
-                        
-
-                    
                   );
                })}
-           
-            
-
-                      
-
-            
-            
-
-            
-            
-
-          
-           
-         
-
        </Container>
     )
 }

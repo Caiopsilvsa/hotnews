@@ -1,5 +1,5 @@
 import { HeaderDiv } from "../Header/styled"
-import headerImg from "../assets/hot.png"
+import headerImg from "../hot.png";
 
 export function Header(){
    return(
