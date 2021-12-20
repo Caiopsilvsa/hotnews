@@ -6,27 +6,27 @@ export function Categories (){
         <CategoryList>
 
             <li>
-               <a href="https://hotnewsbr.netlify.app" >
+               <a href="/hotnewsbr" >
                Destaques
                </a>
                
             </li>
             
             <li>
-               <a href="https://hotnewsbr.netlify.app/sports" >
+               <a href="/hotnewsbr/sports" >
                 Esportes
                </a> 
                
             </li>
 
             <li>
-               <a href="https://hotnewsbr.netlify.app/saude" >
+               <a href="/hotnewsbr/saude" >
                   Saúde
                </a>
             </li>
 
             <li>
-              <a href="https://hotnewsbr.netlify.app/mundo" >
+              <a href="/hotnewsbr/mundo" >
                  Mundo
                </a>
             </li>

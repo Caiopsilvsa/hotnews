@@ -14,16 +14,16 @@ function App() {
     <GlobalStyle />
     <Header category="HotNews Brasil"/>
      <Routes>
-       <Route path="https://hotnewsbr.netlify.app" element={<News />}></Route> 
+       <Route path="/hotnewsbr" element={<News />}></Route> 
          
           
-       <Route path="https://hotnewsbr.netlify.app/sports" element={<SportNews/>}></Route> 
+       <Route path="/hotnewsbr/sports" element={<SportNews/>}></Route> 
           
 
-       <Route path="https://hotnewsbr.netlify.app/saude" element={<HealthNews/>}></Route>
+       <Route path="/hotnews/saude" element={<HealthNews/>}></Route>
       
        
-       <Route path="https://hotnewsbr.netlify.app/mundo" element ={<GeneralNews/>}></Route>
+       <Route path="/hotnews/mundo" element ={<GeneralNews/>}></Route>
        
         
       
