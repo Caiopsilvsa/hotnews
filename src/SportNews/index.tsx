@@ -15,13 +15,17 @@ export function SportNews(){
         url:String
 
     }
+
     useEffect(()=>{
+      function call(){
        api.get("https://newsapi.org/v2/top-headlines?country=BR&apiKey=94a89130e7d64940a970dfa99e7201db&category=sports")
-      .then(resp=>{setNews(resp.data.articles)});  
-        console.log(news);
-      
+       .then(resp=>{setNews(resp.data.articles)});  
+       console.log(news);
        
-    },[]);
+      }
+      call();
+        
+     },[]);//eslint-disable-line react-hooks/exhaustive-deps
 
 
     return(
@@ -29,7 +33,7 @@ export function SportNews(){
             
               {news.map(news =>{
                   return(
-                     <Content key={news.id}>
+                     <Content key={Math.random().toString(36).substr(2, 9)}>
                         <a href ={`${news.url}`} target="_blank" rel="noreferrer"> 
                           <h1>  {news.title} </h1> 
                           <img src={`${news.urlToImage}`} alt="img" />  
