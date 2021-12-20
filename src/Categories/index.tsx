@@ -6,7 +6,7 @@ export function Categories (){
         <CategoryList>
 
             <li>
-               <a href="/hotnewsbr" >
+               <a href="/" >
                Destaques
                </a>
                

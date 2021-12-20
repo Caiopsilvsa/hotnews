@@ -14,7 +14,7 @@ function App() {
     <GlobalStyle />
     <Header category="HotNews Brasil"/>
      <Routes>
-       <Route path="/hotnewsbr" element={<News />}></Route> 
+       <Route path="/" element={<News />}></Route> 
          
           
        <Route path="/hotnewsbr/sports" element={<SportNews/>}></Route> 
