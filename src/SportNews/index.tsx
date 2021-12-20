@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { api } from "../services/api";
 import { Container, Content } from "./style";
 
-export function News(){
+export function SportNews(){
      
     const [news,setNews]=useState<NewsList[]>([]);
         
@@ -16,7 +16,7 @@ export function News(){
 
     }
     useEffect(()=>{
-       api.get("https://newsapi.org/v2/top-headlines?country=BR&apiKey=94a89130e7d64940a970dfa99e7201db")
+       api.get("https://newsapi.org/v2/top-headlines?country=BR&apiKey=94a89130e7d64940a970dfa99e7201db&category=sports")
       .then(resp=>{setNews(resp.data.articles)});  
         console.log(news);
       

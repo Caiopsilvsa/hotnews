@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 import { api } from "../services/api";
 import { Container, Content } from "./style";
 
-export function News(){
+export function GeneralNews(){
      
     const [news,setNews]=useState<NewsList[]>([]);
         
@@ -16,11 +16,11 @@ export function News(){
 
     }
     useEffect(()=>{
-       api.get("https://newsapi.org/v2/top-headlines?country=BR&apiKey=94a89130e7d64940a970dfa99e7201db")
+       api.get("https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=94a89130e7d64940a970dfa99e7201db")
       .then(resp=>{setNews(resp.data.articles)});  
         console.log(news);
       
-       
+ 
     },[]);
 
 

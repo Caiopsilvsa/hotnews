@@ -1,17 +1,35 @@
+import { Categories } from "../Categories";
 import { HeaderDiv } from "../Header/styled"
 import headerImg from "../hot.png";
+import { Container } from "../News/style";
 
-export function Header(){
+interface HeaderProps{
+   category:String
+}
+
+export function Header({category}:HeaderProps){
    return(
-   <HeaderDiv>
-       <h2> 
-           HotNews Brasil
-       </h2>
+ <>
+  <Container>
+     <HeaderDiv>
+          <h2> 
+           {category}
+          </h2>
 
-       <img src ={headerImg} alt="logo">
+         <img src ={headerImg} alt="logo">
 
-       </img>
+          </img>
         
-    </HeaderDiv>
+      </HeaderDiv>
+
+    
+
+      <Categories />
+
+    
+    
+    </Container>
+   </>
    ) 
+
 }

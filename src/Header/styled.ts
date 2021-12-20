@@ -12,6 +12,7 @@ export const HeaderDiv = styled.header`
     top:0;
     left:0;
     
+    
 
     h2{
         padding-top: 10px;
@@ -26,10 +27,10 @@ export const HeaderDiv = styled.header`
        padding-left: 10px;
        
    }
-
-
-   
-   
-   
     
 `
+
+export const Container =styled.div`
+  
+`
+
