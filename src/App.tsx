@@ -20,10 +20,10 @@ function App() {
        <Route path="/hotnewsbr/sports" element={<SportNews/>}></Route> 
           
 
-       <Route path="/hotnews/saude" element={<HealthNews/>}></Route>
+       <Route path="/hotnewsbr/saude" element={<HealthNews/>}></Route>
       
        
-       <Route path="/hotnews/mundo" element ={<GeneralNews/>}></Route>
+       <Route path="/hotnewsbr/mundo" element ={<GeneralNews/>}></Route>
        
         
       
